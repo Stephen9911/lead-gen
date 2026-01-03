@@ -420,3 +420,19 @@ body {
     min-height: 64px;
   }
 }
+
+
+/* Footer email styling */
+.footer-email {
+  margin-bottom: 10px;
+}
+
+.footer-email a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-email a:hover {
+  color: #ffffff;
+}

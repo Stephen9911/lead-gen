@@ -18,7 +18,7 @@
         <p class="subheadline">When your operation can't wait, we answer. Oilfield-ready dispatch assistance serving Edmonton, Nisku, Leduc, Acheson, and the EIA corridor.</p>
         
         <!-- PRIMARY CTA - Replace phone number here: -->
-        <a href="tel:+17800000000" class="call-button">Call (780) 000-0000</a>
+        <a href="tel:+12137847495" class="call-button">Call (213) 784-7495</a>
         <p class="cta-note">24/7 AI Dispatch — No Voicemail</p>
 
         <div class="service-areas">
@@ -96,7 +96,7 @@
       <h2 class="cta-headline">Need Hotshot Trucking Right Now?</h2>
       <p class="cta-subheadline">Don't wait. Don't hope someone calls back. Get connected right now.</p>
       <!-- PRIMARY CTA - Replace phone number here: -->
-      <a href="tel:+17800000000" class="call-button call-button-large">Call (780) 000-0000</a>
+      <a href="tel:+12137847495" class="call-button call-button-large">Call (213) 784-7495</a>
       <p class="cta-note">24/7 AI Dispatch — No Voicemail</p>
     </div>
   </section>
@@ -112,7 +112,8 @@
         <div class="footer-contact">
           <p class="footer-phone-label">Call Anytime</p>
           <!-- Replace phone number here: -->
-          <p class="footer-phone"><a href="tel:+17800000000">(780) 000-0000</a></p>
+          <p class="footer-phone"><a href="tel:+12137847495">(213) 784-7495</a></p>
+          <p class="footer-email"><a href="mailto:Leads@albertahotshot.net">Leads@albertahotshot.net</a></p>
           <p class="footer-areas">Edmonton • Nisku • Leduc • Acheson • EIA Corridor</p>
         </div>
       </div>
@@ -122,5 +123,19 @@
     </div>
   </footer>
 
+
+  <script>
+    document.querySelectorAll('[data-cta="call"]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        if (window.gtag) {
+          gtag('event', 'phone_call_click', {
+            event_category: 'engagement',
+            event_label: 'call_button'
+          });
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>
